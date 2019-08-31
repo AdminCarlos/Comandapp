@@ -1,0 +1,250 @@
+﻿body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#panelGlobal {
+    display: none;
+    width: 55vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    background-color: #1e2022;
+    text-shadow: none;
+    color: black;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menuButton {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    height: 8vh;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    outline: none;
+    border: none;
+    border-bottom: solid;
+    border-bottom-color: #3c4044;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.menuButton span {
+    display: block;
+    margin: auto 0 auto 0;
+}
+
+.imgMenu {
+    display: block;
+    margin: auto auto auto auto;
+    width: 60%;
+}
+
+.divStatus {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: fixed;
+    width: 100vw;
+    height: 4vh;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    text-shadow: none;
+    outline: none;
+    border-style: none;
+}
+
+.divStatus span {
+    display: block;
+    margin: auto auto auto auto;
+    font-size: 3.5vw;
+}
+
+#customBody {
+    display: grid;
+    grid-template-columns: 100vw;
+    margin: 4vh 0 0 0;
+    padding: 0 0 0 0;
+    height: 96vh;
+}
+
+.normalPage {
+    /*border-style: solid;
+    border-color: red;*/
+    padding: 3vh 3vw 3vh 3vw;
+    margin: 0 0 0 0;
+    text-shadow: none;
+}
+
+#pageInicio {
+    display: block;
+    height: 100%;
+}
+
+.textContainer {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 2vh 3vw 2vh 3vw;
+    text-align: justify;
+    width: 70vw;
+    border-style: solid;
+    border-color: #1e2022;
+}
+
+#pageIngresar {
+    display: none;
+}
+
+.infoForm {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.infoFormRow {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 6vh;
+    background-color: #1e2022;
+    border-left-style: solid;
+    border-left-width: 4vw;
+    border-color: #788087;
+    margin-bottom: 3vh;
+}
+
+.infoForm label {
+    display: block;
+    margin: auto auto auto auto;
+    color: white;
+}
+
+.divBotones {
+    display: grid;
+    grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+}
+
+.uiButton {
+    height: 8vh;
+    background-color: #788087;
+    border-right-style: solid;
+    border-right-width: 4vw;
+    border-color: #1e2022;
+    color: white;
+}
+
+.uiButton:active {
+    border-width: 2vw;
+}
+
+#buttonIngresar {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.spanNombre {
+}
+
+.spanFecha {
+}
+
+.spanIp {
+}
+
+.spanStatus {
+}
+
+#pageActualizar {
+    display: none;
+    padding: 0 0 0 0;
+}
+
+#tableComandas {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#tableComandas th {
+    position: sticky;
+    height: 5vh;
+    top: 3.8vh;
+    background-color: #1e2022;
+    color: white;
+}
+
+#tableComandas td {
+    border-bottom-style: solid;
+    border-color: gray;
+    border-collapse: collapse;
+}
+
+#pageEditar {
+    display: none;
+}
+
+#pageConfig {
+    display: none;
+}
+
+#pageInfo {
+    display: none;
+}
+
+.rowCredits {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 3vh; 
+}
+
+.imgCredits {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 10vw;
+    
+}
+
+.rowCredits span {
+    padding-left: 3vw;
+    border-left-style: solid;
+    border-left-color: black;
+}
+
+.rowCredits a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*@media (orientation: landscape) {
+    #tablaIngresar th {
+        background-color: #999999;
+        color: white;
+        font-size: 3vw;
+    }
+}
+
+@media (orientation: portrait) {
+
+    
+
+}*/
+
+
