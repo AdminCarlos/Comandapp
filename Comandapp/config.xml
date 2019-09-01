@@ -77,14 +77,14 @@
     <icon src="res/icons/windows/Wide310x150Logo.scale-240.png" width="744" height="360" />
   </platform>
   <platform name="android">
-    <splash src="res/screens/android/screen-hdpi-landscape.png" density="land-hdpi" />
-    <splash src="res/screens/android/screen-ldpi-landscape.png" density="land-ldpi" />
-    <splash src="res/screens/android/screen-mdpi-landscape.png" density="land-mdpi" />
-    <splash src="res/screens/android/screen-xhdpi-landscape.png" density="land-xhdpi" />
-    <splash src="res/screens/android/screen-hdpi-portrait.png" density="port-hdpi" />
-    <splash src="res/screens/android/screen-ldpi-portrait.png" density="port-ldpi" />
-    <splash src="res/screens/android/screen-mdpi-portrait.png" density="port-mdpi" />
-    <splash src="res/screens/android/screen-xhdpi-portrait.png" density="port-xhdpi" />
+    <splash src="res/screens/android/screen.png" density="land-hdpi" />
+    <splash src="res/screens/android/screen.png" density="land-ldpi" />
+    <splash src="res/screens/android/screen.png" density="land-mdpi" />
+    <splash src="res/screens/android/screen.png" density="land-xhdpi" />
+    <splash src="res/screens/android/screen.png" density="port-hdpi" />
+    <splash src="res/screens/android/screen.png" density="port-ldpi" />
+    <splash src="res/screens/android/screen.png" density="port-mdpi" />
+    <splash src="res/screens/android/screen.png" density="port-xhdpi" />
   </platform>
   <platform name="ios">
     <splash src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
@@ -110,4 +110,6 @@
   <plugin name="cordova-plugin-x-toast" spec="~2.7.2" />
   <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
   <preference name="KeepRunning" value="False" />
+  <plugin name="cordova-plugin-splashscreen" spec="~5.0.3" />
+<preference name="SplashScreenDelay" value="3000" />
 </widget>
