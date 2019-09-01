@@ -281,17 +281,40 @@ function buscarComandaEditar() {
             },
             cache: false,
             success: function (data) {
-                window.plugins.toast.showWithOptions({
-                    message: "Encontrada",
-                    duration: "short",
-                    position: "center",
-                    styling: {
-                        opacity: 0.5,
-                        backgroundColor: '#009933',
-                        textColor: '#ffffff'
-                    }
 
-                });
+                if (data == "<div id='divCamposEditar'> <center><p>Esa comanda no existe!</p></center> </div>") {
+
+                    window.plugins.toast.showWithOptions({
+                        message: "Comanda no encontrada",
+                        duration: "short",
+                        position: "center",
+                        styling: {
+                            opacity: 0.5,
+                            backgroundColor: '#cc0000',
+                            textColor: '#ffffff'
+                        }
+
+                    });
+
+                }
+
+                else {
+
+                    window.plugins.toast.showWithOptions({
+                        message: "Comanda encontrada",
+                        duration: "short",
+                        position: "center",
+                        styling: {
+                            opacity: 0.5,
+                            backgroundColor: '#009933',
+                            textColor: '#ffffff'
+                        }
+
+                    });
+
+                }
+
+                
                 $("#divCamposEditar").replaceWith(data);
 
             },
