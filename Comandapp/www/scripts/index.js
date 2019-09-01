@@ -76,12 +76,6 @@ function initializeControls() {
 
     });
 
-    $("#buttonScanear").click(function () {
-
-        scan();
-
-    });
-
     $("#linkIngresar").click(function () {
 
         loadPageIngresar();
@@ -287,6 +281,17 @@ function buscarComandaEditar() {
             },
             cache: false,
             success: function (data) {
+                window.plugins.toast.showWithOptions({
+                    message: "Encontrada",
+                    duration: "short",
+                    position: "center",
+                    styling: {
+                        opacity: 0.5,
+                        backgroundColor: '#009933',
+                        textColor: '#ffffff'
+                    }
+
+                });
                 $("#divCamposEditar").replaceWith(data);
 
             },
@@ -608,28 +613,28 @@ function loadPageInfo() {
 }
 
 //function scan() {
-//    var doc = new jsPDF();
-    
-//    doc.autoTable({ html: '#tableComandas' });
-//    doc.save('table.pdf');
+//    cordova.plugins.barcodeScanner.scan(
+//        function (result) {
+//            if (!result.cancelled) {
+//                if (result.format == "QR_CODE") {
+//                    navigator.notification.prompt("Please enter name of data", function (input) {
+//                        var name = input.input1;
+//                        var value = result.text;
 
-//    $("#tableComandas").tableHTMLExport({
+//                        var data = localStorage.getItem("LocalData");
+//                        console.log(data);
+//                        data = JSON.parse(data);
+//                        data[data.length] = [name, value];
 
-       
-//        type: 'csv',
+//                        localStorage.setItem("LocalData", JSON.stringify(data));
 
-       
-//        filename: 'sample.csv'
-
-//    });
-
-//    let options = {
-//        documentSize: 'A4',
-//        type: 'share',
-//        fileName: 'reporte'
-//    }
-
-//    pdf.fromData($("#pageActualizar").html(), options)
-//        .then((stats) => console.log('status', stats))   // ok..., ok if it was able to handle the file to the OS.  
-//        .catch((err) => console.err(err))
+//                        alert("Done");
+//                    });
+//                }
+//            }
+//        },
+//        function (error) {
+//            alert("Scanning failed: " + error);
+//        }
+//    );
 //}

@@ -133,6 +133,7 @@
 .divBotones {
     display: grid;
     grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+    margin-bottom: 3vh;
 }
 
 .uiButton {
@@ -193,6 +194,16 @@
 
 #pageEditar {
     display: none;
+}
+
+#buttonBuscar {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+#buttonEditar {
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 
 #pageConfig {
