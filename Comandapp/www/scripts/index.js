@@ -165,8 +165,8 @@ function updateEverything() {
         },
         error: function () {
 
-            $(".spanNombre").html("");
-            $(".spanFecha").html("");
+            $(".spanNombre").html(configuracionList.getItem("NombreMesero"));
+            $(".spanFecha").html(setDate());
             $(".spanIp").html(configuracionList.getItem("IpServer"));
             $(".spanStatus").html("Offline");
 
