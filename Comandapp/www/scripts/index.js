@@ -247,7 +247,7 @@ function ingresarComanda() {
             }
         })
 
-    }
+    }   
 
 }
 
