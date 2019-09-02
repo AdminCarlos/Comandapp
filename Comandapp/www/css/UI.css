@@ -94,6 +94,12 @@
     height: 100%;
 }
 
+.imgUI {
+    display: block;
+    width: 55vw;
+    margin: 4vh auto 4vh auto;
+}
+
 .textContainer {
     display: block;
     margin: 0 auto 0 auto;
@@ -102,6 +108,10 @@
     width: 70vw;
     border-style: solid;
     border-color: #1e2022;
+    border-radius: 5vw;
+    font-size: 4vw;
+    border-color: #66b3ff;
+    border-width: 1vw;
 }
 
 #pageIngresar {
