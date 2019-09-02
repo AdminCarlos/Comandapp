@@ -154,15 +154,27 @@
 
         <div id="pageConfig" class="normalPage" data-enhance="false">
 
-            <div class="divConfigForm">
+            <div id="divConfigForm" class="infoForm">
 
-                <label>Dirección IP Servidor</label>
-                <input type="text" id="txtIpServer" />
-                <button id="buttonCambiarIp" class="uiButton">Guardar</button>
+                <div class="infoFormRow">
 
-                <label>Nombre del Mesero</label>
-                <input type="text" id="txtNombre" />
-                <button id="buttonCambiarNombre" class="uiButton">Guardar</button>
+                    <label>Dirección IP Servidor</label>
+                    <input type="text" id="txtIpServer" class="textbox"/>
+
+                </div>                
+
+                <div class="infoFormRow">
+
+                    <label>Nombre del Mesero</label>
+                    <input type="text" id="txtNombre" class="textbox"/>
+
+                </div>
+
+                <div class="divBotones">
+
+                    <button id="buttonGuardarConfig" class="uiButton">Guardar</button>
+
+                </div>
 
             </div>
 

@@ -122,12 +122,14 @@
     border-left-width: 4vw;
     border-color: #788087;
     margin-bottom: 3vh;
+    text-align: center;
 }
 
 .infoForm label {
     display: block;
     margin: auto auto auto auto;
     color: white;
+    font-size: 4vw;
 }
 
 .divBotones {
@@ -143,6 +145,7 @@
     border-right-width: 4vw;
     border-color: #1e2022;
     color: white;
+    font-size: 4vw;
 }
 
 .uiButton:active {
@@ -208,6 +211,11 @@
 
 #pageConfig {
     display: none;
+}
+
+#buttonGuardarConfig {
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 
 #pageInfo {

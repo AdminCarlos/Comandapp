@@ -64,15 +64,9 @@ function initializeControls() {
 
     });
 
-    $("#buttonCambiarIp").click(function () {
+    $("#buttonGuardarConfig").click(function () {
 
-        changeIp();
-
-    });
-
-    $("#buttonCambiarNombre").click(function () {
-
-        changeName();
+        changeConfig();
 
     });
 
@@ -502,55 +496,37 @@ function setIpFirstTime() {
 
 }
 
-function changeIp() {
+function changeConfig() {
 
-    if ($("#txtIpServer").val() == "") {
+    if ($("#txtIpServer").val() == "" && $("#txtNombre").val() != "") {
 
-        window.plugins.toast.showWithOptions({
-            message: "Dirección IP no puede estar vacia",
-            duration: "short",
-            position: "center",
-            styling: {
-                opacity: 0.5,
-                backgroundColor: '#cc0000',
-                textColor: '#ffffff'
-            }
+        changeName();
 
-        });
+    }
 
-    } 
+    else if ($("#txtIpServer").val() != "" && $("#txtNombre").val() == "") {
+
+        changeIp();
+
+    }
 
     else {
 
-        configuracionList.setItem("IpServer", $("#txtIpServer").val());
+        changeIp();
+        changeName();
 
     }
+}
+
+function changeIp() {
+
+    configuracionList.setItem("IpServer", $("#txtIpServer").val());
 
 }
 
 function changeName() {
 
-    if ($("#txtNombre").val() == "") {
-
-        window.plugins.toast.showWithOptions({
-            message: "Nombre del mesero no puede estar vacio",
-            duration: "short",
-            position: "center",
-            styling: {
-                opacity: 0.5,
-                backgroundColor: '#cc0000',
-                textColor: '#ffffff'
-            }
-
-        });
-
-    }
-
-    else {
-
-        configuracionList.setItem("NombreMesero", $("#txtNombre").val());
-
-    }
+    configuracionList.setItem("NombreMesero", $("#txtNombre").val());
 
 }
 
