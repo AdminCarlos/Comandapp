@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.myappecfbf2" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="es-MX" android-versionCode="">
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="io.cordova.myappecfbf2" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="es-MX" android-versionCode="">
   <name>Comandapp</name>
   <description>Aplicacion para ingresar comandas a base de datos del restaurante Niclux.</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Carlos Flores</author>
@@ -111,5 +111,5 @@
   <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
   <preference name="KeepRunning" value="False" />
   <plugin name="cordova-plugin-splashscreen" spec="~5.0.3" />
-<preference name="SplashScreenDelay" value="3000" />
+  <preference name="SplashScreenDelay" value="3000" />
 </widget>
