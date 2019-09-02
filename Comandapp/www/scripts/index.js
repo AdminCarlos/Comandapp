@@ -70,6 +70,12 @@ function initializeControls() {
 
     });
 
+    $("#linkInicio").click(function () {
+
+        loadPageInicio();
+
+    });
+
     $("#linkIngresar").click(function () {
 
         loadPageIngresar();
@@ -543,6 +549,19 @@ function closeMenu() {
     $("#panelGlobal").animate({
         width: "hide"
     }, 180);
+
+}
+
+function loadPageInicio() {
+
+    $("#pageInicio").show();
+    $("#pageIngresar").hide();
+    $("#pageActualizar").hide();
+    $("#pageEditar").hide();
+    $("#pageConfig").hide();
+    $("#pageInfo").hide();
+
+    closeMenu();
 
 }
 
